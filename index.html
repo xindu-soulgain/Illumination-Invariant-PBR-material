@@ -180,6 +180,55 @@
 </head>
 <body>
 
+<style>
+  #results-carousel .item iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    display: block;
+  }
+
+  .compact-video-section .hero-body {
+    padding-top: 2.25rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .compact-video-section .title {
+    margin-bottom: 0.75rem;
+  }
+
+  .compact-video-section .sota-description {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .compact-video-section .publication-video {
+    margin: 0 auto;
+    max-width: 760px;
+  }
+
+  .compact-video-section .results-carousel {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+  }
+
+  .compact-video-section .results-carousel .item {
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .compact-video-section .hero-body {
+      padding-top: 1.75rem;
+      padding-bottom: 2rem;
+    }
+  }
+</style>
+
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
@@ -190,31 +239,31 @@
   <div class="more-works-container">
     <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
       <i class="fas fa-flask"></i>
-      More Works
+      Related Works
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
+        <h4>Related Works from Our Lab</h4>
         <button class="close-btn" onclick="toggleMoreWorks()">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
         <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="https://github.com/ubisoft/ubisoft-laforge-chord/" class="work-item" target="_blank">
           <div class="work-info">
             <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
+            <h5>Chord: Chain of Rendering Decomposition for PBR Material Estimation from Generated Texture Images</h5>
             <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
+            <p>A two-stage framework that generates tileable textures and sequentially estimates SVBRDF channels through chained diffusion-based decomposition.</p>
             <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <span class="work-venue">SIGGRAPH Asia 2025</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
         <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 2</h5>
             <p>Brief description of the work and its main contribution.</p>
@@ -229,7 +278,7 @@
             <span class="work-venue">Conference/Journal 2023</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
@@ -241,71 +290,71 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Illumination Invariant PBR material</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Du Xin</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xu Maoyuan</a><sup>*</span>
+                  <!-- <span class="author-block"> -->
+                    <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Ubisoft LaForge<br>2026</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
+                  <!-- <div class="column has-text-centered"> -->
+                    <!-- <div class="publication-links"> -->
                          <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                      <!-- <span class="link-block"> -->
+                        <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" -->
+                        <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                        <!-- <span class="icon"> -->
+                          <!-- <i class="fas fa-file-pdf"></i> -->
+                        <!-- </span> -->
+                        <!-- <span>Paper</span> -->
+                      <!-- </a> -->
+                    <!-- </span> -->
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                    <!-- <span class="link-block"> -->
+                      <!-- <a href="static/pdfs/supplementary_material.pdf" target="_blank" -->
+                      <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                      <!-- <span class="icon"> -->
+                        <!-- <i class="fas fa-file-pdf"></i> -->
+                      <!-- </span> -->
+                      <!-- <span>Supplementary</span> -->
+                    <!-- </a> -->
+                  <!-- </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                  <!-- <span class="link-block"> -->
+                    <!-- <a href="https://github.com/YOUR REPO HERE" target="_blank" -->
+                    <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                    <!-- <span class="icon"> -->
+                      <!-- <i class="fab fa-github"></i> -->
+                    <!-- </span> -->
+                    <!-- <span>Code</span> -->
+                  <!-- </a> -->
+                <!-- </span> -->
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
+                <!-- <span class="link-block"> -->
+                  <!-- <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank" -->
+                  <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                  <!-- <span class="icon"> -->
+                    <!-- <i class="ai ai-arxiv"></i> -->
+                  <!-- </span> -->
+                  <!-- <span>arXiv</span> -->
+                <!-- </a> -->
+              <!-- </span> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -315,21 +364,21 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata"> -->
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+        <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
+      <!-- </video> -->
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -341,7 +390,13 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We investigate illumination-invariant material decomposition by learning material representations that disentangle intrinsic properties from illumination-dependent appearance. Our current focus is a weakly supervised representation learning framework that combines physically rendered supervision with DINO-inspired self-distillation, treating renderings of the same material under different illumination conditions as positive pairs. Given geometry, we aim to recover physically meaningful material properties under a Cook-Torrance BRDF, progressively estimating basecolor, normal, metallic, and roughness. Mitsuba 3-based differentiable rendering further enables physics-consistent supervision and controlled illumination interventions at scale. The current experiments focus on learning the illumination-invariant representation using the MatSynth SVBRDF dataset conditions on gemoetry infomation, a subsequent stage will jointly recover geometry alongside material, removing the need for external depth conditioning.
+          </p>
+          <p>
+            Our approach shares with IntrinsicAnything the goal of resolving the inherent ambiguity between material and illumination through learned material priors, as well as the use of physically based rendering for material recovery. However, while IntrinsicAnything learns diffusion priors of albedo and specular components to regularize inverse rendering under unknown illumination, our approach seeks to remove illumination dependence directly at the representation-learning level. In this sense, we aim to learn a representation in which the same material remains consistent across varying illumination, so that, once geometry is provided, material decomposition can converge toward physically meaningful and perceptually plausible albedo and BRDF properties.
+          </p>
+          <p>
+            The current prototype has several known limitations that reflect its early stage. Because each training case currently uses a single, randomly sampled environment lighting condition rather than the multi-illumination positive pairs described above, the model has not yet fully learned to disentangle illumination from material identity. This appears as visible color shift on cases such as the manhole cover, human face, and car examples, where the recovered albedo is noticeably less faithful to the object's true material color than 3DAT (our Qwen-Image-based finetune). This is direct evidence for why the self-distillation stage is necessary, and we are actively extending training to multi-illumination positive pairs to address it. Separately, we observe that shadow-related low-frequency illumination is removed more effectively than specular highlights (e.g., the elephant example retains visible specular residue after shadow removal), suggesting that diffuse and specular components may require distinct treatment under the Cook-Torrance decomposition, a direction we are investigating as part of the staged basecolor/metallic/roughness estimation. I'm happy to discuss these failure modes and our current thinking in more detail if useful.
           </p>
         </div>
       </div>
@@ -351,47 +406,883 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- =========================================================
+     Dataset Source Comparisons
+     ========================================================= -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <h2 class="title is-3 has-text-centered">Scanned Artist Materials</h2>
+      <p class="has-text-centered sota-description">
+        A number of scanned captures containing extreme direct shadows. These are the raw PBR-baked textures before any cleanup, seam removal, or post-processing. Successfully handling these captures under such extreme lighting conditions will be an important benchmark for evaluating the capability, robustness, and practical effectiveness of our prototype.
+      </p>
+      <div class="sota-table-wrapper">
+        <table class="sota-comparison-table dataset-comparison-table">
+          <thead><tr><th>Input Image</th><th>Intrinsic Anything</th><th>Ours<br><span>MatSynth-only model</span></th><th>3DAT<br><span>Qwen-Image 3D material finetune</span></th></tr></thead>
+          <tbody>
+            <tr><td class="input-cell"><img src="static/images/comparison/scan1/scan1.png" alt="Scan 1 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/scan1/intrinsic.png" alt="Scan 1 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/scan1/intrinsic.png" class="slider-base" alt="Scan 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan1/test_nm/scan1_albedo.png" alt="Scan 1 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/scan1/intrinsic.png" class="slider-base" alt="Scan 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan1/3dat_albedo.png" alt="Scan 1 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/scan2/scan2.png" alt="Scan 2 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/scan2/intrinsic.png" alt="Scan 2 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/scan2/intrinsic.png" class="slider-base" alt="Scan 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan2/test_nm/scan2_albedo.png" alt="Scan 2 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/scan2/intrinsic.png" class="slider-base" alt="Scan 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan2/3dat_albedo.png" alt="Scan 2 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/scan3/scan3.png" alt="Scan 3 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/scan3/intrinsic.png" alt="Scan 3 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/scan3/intrinsic.png" class="slider-base" alt="Scan 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan3/test_nm/scan3_albedo.png" alt="Scan 3 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/scan3/intrinsic.png" class="slider-base" alt="Scan 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan3/3dat_albedo.png" alt="Scan 3 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/scan4/scan4.png" alt="Scan 4 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/scan4/intrinsic.png" alt="Scan 4 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/scan4/intrinsic.png" class="slider-base" alt="Scan 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan4/test_nm/scan4_albedo.png" alt="Scan 4 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/scan4/intrinsic.png" class="slider-base" alt="Scan 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/scan4/3dat_albedo.png" alt="Scan 4 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
+<section class="hero is-small is-light compact-video-section">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">AI-Generated Material Maps</h2>
+      <p class="has-text-centered sota-description">
+        Material maps generated by AI models(SDXL, Qwen-Image, Z-Image, etc.), evaluated with Intrinsic Anything and our current prototype models.
+      </p>
+      <div class="sota-table-wrapper">
+        <table class="sota-comparison-table dataset-comparison-table">
+          <thead><tr><th>Input Image</th><th>Intrinsic Anything</th><th>Ours<br><span>MatSynth-only model</span></th><th>3DAT<br><span>Qwen-Image 3D material finetune</span></th></tr></thead>
+          <tbody>
+            <tr><td class="input-cell"><img src="static/images/comparison/gen1/gen1.png" alt="Generated Material 1 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/gen1/intrinsic.png" alt="Generated Material 1 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/gen1/intrinsic.png" class="slider-base" alt="Generated Material 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen1/test_nm/gen1_albedo.png" alt="Generated Material 1 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/gen1/intrinsic.png" class="slider-base" alt="Generated Material 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen1/3dat_albedo.png" alt="Generated Material 1 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/gen2/gen2.png" alt="Generated Material 2 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/gen2/intrinsic.png" alt="Generated Material 2 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/gen2/intrinsic.png" class="slider-base" alt="Generated Material 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen2/test_nm/gen2_albedo.png" alt="Generated Material 2 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/gen2/intrinsic.png" class="slider-base" alt="Generated Material 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen2/3dat_albedo.png" alt="Generated Material 2 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/gen3/gen3.png" alt="Generated Material 3 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/gen3/intrinsic.png" alt="Generated Material 3 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/gen3/intrinsic.png" class="slider-base" alt="Generated Material 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen3/test_nm/gen3_albedo.png" alt="Generated Material 3 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/gen3/intrinsic.png" class="slider-base" alt="Generated Material 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen3/3dat_albedo.png" alt="Generated Material 3 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/gen4/gen4.png" alt="Generated Material 4 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/gen4/intrinsic.png" alt="Generated Material 4 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/gen4/intrinsic.png" class="slider-base" alt="Generated Material 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen4/test_nm/gen4_albedo.png" alt="Generated Material 4 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/gen4/intrinsic.png" class="slider-base" alt="Generated Material 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen4/3dat_albedo.png" alt="Generated Material 4 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/gen5/gen5.png" alt="Generated Material 5 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/gen5/intrinsic.png" alt="Generated Material 5 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/gen5/intrinsic.png" class="slider-base" alt="Generated Material 5 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen5/test_nm/gen5_albedo.png" alt="Generated Material 5 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/gen5/intrinsic.png" class="slider-base" alt="Generated Material 5 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/gen5/3dat_albedo.png" alt="Generated Material 5 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">In-the-Wild Camera Captures</h2>
+      <p class="has-text-centered sota-description">
+        Scenes photographed in the wild with a camera, used to test robustness under natural lighting and capture conditions.
+      </p>
+      <div class="sota-table-wrapper">
+        <table class="sota-comparison-table dataset-comparison-table">
+          <thead><tr><th>Input Image</th><th>Intrinsic Anything</th><th>Ours<br><span>MatSynth-only model</span></th><th>3DAT<br><span>Qwen-Image 3D material finetune</span></th></tr></thead>
+          <tbody>
+            <tr><td class="input-cell"><img src="static/images/comparison/camera1/test_nm/render/from_wild_img_0002.png" alt="Camera 1 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/camera1/intrinsic.png" alt="Camera 1 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/camera1/intrinsic.png" class="slider-base" alt="Camera 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera1/test_nm/from_wild_img_0002_albedo.png" alt="Camera 1 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/camera1/intrinsic.png" class="slider-base" alt="Camera 1 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera1/3dat_albedo.png" alt="Camera 1 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/camera2/3dat/render/wild.png" alt="Camera 2 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/camera2/intrinsic.png" alt="Camera 2 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/camera2/intrinsic.png" class="slider-base" alt="Camera 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera2/3dat/wild_albedo.png" alt="Camera 2 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/camera2/intrinsic.png" class="slider-base" alt="Camera 2 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera2/3dat_albedo.png" alt="Camera 2 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/camera3/test_nm/render/from_wild_img_0007.png" alt="Camera 3 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/camera3/intrinsic.png" alt="Camera 3 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/camera3/intrinsic.png" class="slider-base" alt="Camera 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera3/test_nm/from_wild_img_0007_albedo.png" alt="Camera 3 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/camera3/intrinsic.png" class="slider-base" alt="Camera 3 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera3/3dat_albedo.png" alt="Camera 3 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/camera4/camera4.png" alt="Camera 4 Input" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/camera4/intrinsic.png" alt="Camera 4 Intrinsic Anything" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/camera4/intrinsic.png" class="slider-base" alt="Camera 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera4/test_nm/camera4_albedo.png" alt="Camera 4 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/camera4/intrinsic.png" class="slider-base" alt="Camera 4 Intrinsic Anything"><div class="slider-overlay"><img src="static/images/comparison/camera4/3dat_albedo.png" alt="Camera 4 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">Intrinsic Anything</div></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Re-rendered Dataset Materials</h2>
+      <p class="has-text-centered sota-description">
+        Images re-rendered from material datasets, providing controlled input examples with known material structure. Materials comes from MatSynth, internal datasets, and UVMaps.
+      </p>
+      <div class="sota-table-wrapper">
+        <table class="sota-comparison-table dataset-comparison-table material-comparison-table">
+          <thead><tr><th>Input Image</th><th>Ground Truth Material<br><span>GT Albedo vs. GT Normal</span></th><th>Intrinsic Anything<br><span>vs. GT Albedo</span></th><th>Ours<br><span>vs. GT Albedo</span></th><th>3DAT<br><span>vs. GT Albedo</span></th></tr></thead>
+          <tbody>
+            <tr><td class="input-cell"><img src="static/images/comparison/mat1/mat1.png" alt="Material 1 Input" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/mat1/gt_normal.png" class="slider-base" alt="Material 1 GT Normal"><div class="slider-overlay"><img src="static/images/comparison/mat1/gt_albedo.png" alt="Material 1 GT Albedo"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">GT Albedo</div><div class="slider-label slider-label-right">GT Normal</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat1/gt_albedo.png" class="slider-base" alt="Material 1 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat1/intrinsic.png" alt="Material 1 Intrinsic Anything"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Intrinsic Anything</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat1/gt_albedo.png" class="slider-base" alt="Material 1 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat1/test_nm/mat1_albedo.png" alt="Material 1 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat1/gt_albedo.png" class="slider-base" alt="Material 1 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat1/3dat_albedo.png" alt="Material 1 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">GT Albedo</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/mat2/mat2.png" alt="Material 2 Input" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/mat2/gt_normal.png" class="slider-base" alt="Material 2 GT Normal"><div class="slider-overlay"><img src="static/images/comparison/mat2/gt_albedo.png" alt="Material 2 GT Albedo"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">GT Albedo</div><div class="slider-label slider-label-right">GT Normal</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat2/gt_albedo.png" class="slider-base" alt="Material 2 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat2/intrinsic.png" alt="Material 2 Intrinsic Anything"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Intrinsic Anything</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat2/gt_albedo.png" class="slider-base" alt="Material 2 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat2/test_nm/mat2_albedo.png" alt="Material 2 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat2/gt_albedo.png" class="slider-base" alt="Material 2 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat2/3dat_albedo.png" alt="Material 2 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">GT Albedo</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/mat3/mat3.png" alt="Material 3 Input" loading="lazy"></td><td><div class="sota-slider"><img src="static/images/comparison/mat3/gt_normal.png" class="slider-base" alt="Material 3 GT Normal"><div class="slider-overlay"><img src="static/images/comparison/mat3/gt_albedo.png" alt="Material 3 GT Albedo"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">GT Albedo</div><div class="slider-label slider-label-right">GT Normal</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat3/gt_albedo.png" class="slider-base" alt="Material 3 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat3/intrinsic.png" alt="Material 3 Intrinsic Anything"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Intrinsic Anything</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat3/gt_albedo.png" class="slider-base" alt="Material 3 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat3/test_nm/mat3_albedo.png" alt="Material 3 Ours"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">Ours</div><div class="slider-label slider-label-right">GT Albedo</div></div></td><td><div class="sota-slider"><img src="static/images/comparison/mat3/gt_albedo.png" class="slider-base" alt="Material 3 GT Albedo"><div class="slider-overlay"><img src="static/images/comparison/mat3/3dat_albedo.png" alt="Material 3 3DAT"></div><div class="slider-line"><div class="slider-button">↔</div></div><div class="slider-label slider-label-left">3DAT</div><div class="slider-label slider-label-right">GT Albedo</div></div></td></tr>
+            <tr><td class="input-cell"><img src="static/images/comparison/mat4/mat4.png" alt="Material 4 Input" loading="lazy"></td><td class="result-cell"><div class="na-cell">N/A</div></td><td class="result-cell"><img src="static/images/comparison/mat4/intrinsic.png" alt="Material 4 Intrinsic Anything" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/mat4/test_nm/mat4_albedo.png" alt="Material 4 Ours" loading="lazy"></td><td class="result-cell"><img src="static/images/comparison/mat4/3dat_albedo.png" alt="Material 4 3DAT" loading="lazy"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+
+<!-- =========================================================
+     Intrinsic Anything Comparison
+     ========================================================= -->
+<section class="hero is-small intrinsic-anything-section">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">
+        Prototype Model Comparison on Intrinsic Anything Examples
+      </h2>
+      <p class="has-text-centered sota-description">
+        Comparison on Intrinsic Anything examples using our temporary model
+        trained only on MatSynth, our group's 3DAT model, the Intrinsic
+        Anything project page result, and our locally run Intrinsic Anything
+        result.
+      </p>
+      <div class="sota-table-wrapper">
+        <table class="sota-comparison-table intrinsic-anything-table">
+          <thead>
+            <tr>
+              <th class="input-column">Input Image</th>
+              <th>
+                Intrinsic Anything
+                <br>
+                <span>Project Page</span>
+              </th>
+              <th>
+                Intrinsic Anything
+                <br>
+                <span>Our Run locally</span>
+              </th>
+              <th>
+                Ours
+                <br>
+                <span>our current prototype model trained only on MatSynth</span>
+              </th>
+              <th>
+                3DAT(ours)
+                <br>
+                <span>finetune Qwen-Image based on 3D material assets</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene1/scene1.png" alt="Scene 1 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <div class="na-cell">N/A</div>
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene1/intrinsic_anything.png" alt="Scene 1 Intrinsic Anything Our Run" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene1/test_nm/scene1_albedo.png" alt="Scene 1 Ours MatSynth-only" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene1/3dat_albedo.png" alt="Scene 1 3DAT" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene2/scene2.png" alt="Scene 2 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene2/intrinsic.png" alt="Scene 2 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene2/intrinsic.png" class="slider-base" alt="Scene 2 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene2/intrinsic_anything.png" alt="Scene 2 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene2/intrinsic.png" class="slider-base" alt="Scene 2 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene2/test_nm/scene2_albedo.png" alt="Scene 2 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene2/intrinsic.png" class="slider-base" alt="Scene 2 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene2/3dat_albedo.png" alt="Scene 2 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene3/scene3.png" alt="Scene 3 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene3/intrinsic.jpeg" alt="Scene 3 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene3/intrinsic.jpeg" class="slider-base" alt="Scene 3 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene3/intrinsic_anything.png" alt="Scene 3 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene3/intrinsic.jpeg" class="slider-base" alt="Scene 3 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene3/test_nm/scene3_albedo.png" alt="Scene 3 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene3/intrinsic.jpeg" class="slider-base" alt="Scene 3 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene3/3dat_albedo.png" alt="Scene 3 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene4/scene4.png" alt="Scene 4 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene4/intrinsic.jpeg" alt="Scene 4 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene4/intrinsic.jpeg" class="slider-base" alt="Scene 4 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene4/intrinsic_anything.png" alt="Scene 4 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene4/intrinsic.jpeg" class="slider-base" alt="Scene 4 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene4/test_nm/scene4_albedo.png" alt="Scene 4 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene4/intrinsic.jpeg" class="slider-base" alt="Scene 4 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene4/3dat_albedo.png" alt="Scene 4 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene5/scene5.png" alt="Scene 5 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene5/intrinsic.png" alt="Scene 5 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene5/intrinsic.png" class="slider-base" alt="Scene 5 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene5/intrinsic_anything.png" alt="Scene 5 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene5/intrinsic.png" class="slider-base" alt="Scene 5 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene5/test_nm/scene5_albedo.png" alt="Scene 5 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene5/intrinsic.png" class="slider-base" alt="Scene 5 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene5/3dat_albedo.png" alt="Scene 5 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene6/scene6.png" alt="Scene 6 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene6/intrinsic.png" alt="Scene 6 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene6/intrinsic.png" class="slider-base" alt="Scene 6 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene6/intrinsic_anything.png" alt="Scene 6 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene6/intrinsic.png" class="slider-base" alt="Scene 6 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene6/test_nm/scene6_albedo.png" alt="Scene 6 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene6/intrinsic.png" class="slider-base" alt="Scene 6 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene6/3dat_albedo.png" alt="Scene 6 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="input-cell">
+                <img src="static/images/comparison/scene7/scene7.png" alt="Scene 7 Input" loading="lazy">
+              </td>
+              <td class="result-cell">
+                <img src="static/images/comparison/scene7/intrinsic.png" alt="Scene 7 Intrinsic Anything Project Page" loading="lazy">
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene7/intrinsic.png" class="slider-base" alt="Scene 7 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene7/intrinsic_anything.png" alt="Scene 7 Intrinsic Anything Our Run">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Our Run</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene7/intrinsic.png" class="slider-base" alt="Scene 7 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene7/test_nm/scene7_albedo.png" alt="Scene 7 Ours MatSynth-only">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">Ours</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+              <td>
+                <div class="sota-slider" data-start="50">
+                  <img src="static/images/comparison/scene7/intrinsic.png" class="slider-base" alt="Scene 7 Intrinsic Anything Project Page">
+                  <div class="slider-overlay">
+                    <img src="static/images/comparison/scene7/3dat_albedo.png" alt="Scene 7 3DAT">
+                  </div>
+                  <div class="slider-line"><div class="slider-button">↔</div></div>
+                  <div class="slider-label slider-label-left">3DAT</div>
+                  <div class="slider-label slider-label-right">Project Page</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =========================================================
+     CSS
+     ========================================================= -->
+<style>
+/* ---------------------------------------------
+   Description
+--------------------------------------------- */
+.sota-description {
+  margin-bottom: 30px;
+  color: #666;
+}
+/* ---------------------------------------------
+   Horizontal scrolling wrapper
+--------------------------------------------- */
+.sota-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+/* ---------------------------------------------
+   Main table
+--------------------------------------------- */
+.sota-comparison-table {
+  width: 100%;
+  min-width: 1450px;
+  border-collapse: separate;
+  border-spacing: 6px;
+  table-layout: fixed;
+}
+.intrinsic-anything-table {
+  min-width: 1080px;
+}
+.dataset-comparison-table {
+  min-width: 940px;
+}
+.material-comparison-table {
+  min-width: 1120px;
+}
+.intrinsic-anything-table th:first-child,
+.intrinsic-anything-table td:first-child {
+  width: 170px;
+}
+.dataset-comparison-table th:first-child,
+.dataset-comparison-table td:first-child {
+  width: 220px;
+}
+.material-comparison-table th:first-child,
+.material-comparison-table td:first-child {
+  width: 210px;
+}
+.intrinsic-anything-table th:not(:first-child),
+.intrinsic-anything-table td:not(:first-child) {
+  width: 220px;
+}
+.dataset-comparison-table th:not(:first-child),
+.dataset-comparison-table td:not(:first-child) {
+  width: 240px;
+}
+.material-comparison-table th:not(:first-child),
+.material-comparison-table td:not(:first-child) {
+  width: 225px;
+}
+/* ---------------------------------------------
+   Table header
+--------------------------------------------- */
+.sota-comparison-table th {
+  background: #f5f5f5;
+  padding: 14px 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+.sota-comparison-table th span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+/* ---------------------------------------------
+   Column widths
+--------------------------------------------- */
+.sota-comparison-table th:first-child,
+.sota-comparison-table td:first-child {
+  width: 220px;
+}
+.sota-comparison-table th:not(:first-child),
+.sota-comparison-table td:not(:first-child) {
+  width: 245px;
+}
+/* ---------------------------------------------
+   Table cells
+--------------------------------------------- */
+.sota-comparison-table td {
+  padding: 4px;
+  vertical-align: middle;
+  background: #fff;
+  border-radius: 6px;
+}
+/* ---------------------------------------------
+   Input image
+--------------------------------------------- */
+.input-cell img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
+  background: #000;
+}
+.result-cell img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
+  background: #000;
+}
+.na-cell {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #f5f5f5;
+  color: #777;
+  font-weight: 600;
+}
+.intrinsic-anything-table .input-cell img,
+.intrinsic-anything-table .result-cell img,
+.intrinsic-anything-table .na-cell,
+.intrinsic-anything-table .sota-slider {
+  aspect-ratio: 4 / 3;
+}
+.dataset-comparison-table .input-cell img,
+.dataset-comparison-table .result-cell img,
+.dataset-comparison-table .sota-slider {
+  aspect-ratio: 4 / 3;
+}
+.material-comparison-table .input-cell img,
+.material-comparison-table .result-cell img,
+.material-comparison-table .na-cell,
+.material-comparison-table .sota-slider {
+  aspect-ratio: 1 / 1;
+}
+.material-comparison-table .input-cell img,
+.material-comparison-table .result-cell img,
+.material-comparison-table .sota-slider .slider-base,
+.material-comparison-table .sota-slider .slider-overlay img {
+  object-fit: fill;
+}
+.intrinsic-anything-table tbody tr:nth-child(2) .input-cell img,
+.intrinsic-anything-table tbody tr:nth-child(2) .result-cell img,
+.intrinsic-anything-table tbody tr:nth-child(2) .sota-slider {
+  aspect-ratio: 2 / 3;
+}
+.intrinsic-anything-table tbody tr:nth-child(5) .input-cell img,
+.intrinsic-anything-table tbody tr:nth-child(5) .result-cell img,
+.intrinsic-anything-table tbody tr:nth-child(5) .sota-slider {
+  aspect-ratio: 3 / 4;
+}
+.intrinsic-anything-table .input-cell img,
+.intrinsic-anything-table .result-cell img,
+.intrinsic-anything-table .sota-slider .slider-base,
+.intrinsic-anything-table .sota-slider .slider-overlay img,
+.dataset-comparison-table .input-cell img,
+.dataset-comparison-table .result-cell img,
+.dataset-comparison-table .sota-slider .slider-base,
+.dataset-comparison-table .sota-slider .slider-overlay img {
+  object-fit: cover;
+  background: #f5f5f5;
+}
+.intrinsic-anything-table .sota-slider,
+.dataset-comparison-table .sota-slider {
+  background: #f5f5f5;
+}
+.intrinsic-anything-table th,
+.dataset-comparison-table th {
+  padding: 11px 6px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.intrinsic-anything-table th span,
+.dataset-comparison-table th span {
+  font-size: 11px;
+}
+.intrinsic-anything-table td,
+.dataset-comparison-table td {
+  padding: 3px;
+}
+/* ---------------------------------------------
+   Comparison slider
+--------------------------------------------- */
+.sota-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #000;
+  cursor: ew-resize;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+/* ---------------------------------------------
+   Base image
+   IntrinsicAnything
+--------------------------------------------- */
+.sota-slider .slider-base {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+/* ---------------------------------------------
+   Overlay
+   Ours
+--------------------------------------------- */
+.sota-slider .slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+/*
+   IMPORTANT:
+   The image inside the overlay must keep
+   the same dimensions as the entire slider.
+*/
+.sota-slider .slider-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--slider-width, 245px);
+  max-width: none;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+/* ---------------------------------------------
+   Slider line
+--------------------------------------------- */
+.sota-slider .slider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: white;
+  z-index: 10;
+  pointer-events: none;
+  box-shadow:
+    0 0 4px rgba(0,0,0,0.5);
+}
+/* ---------------------------------------------
+   Slider button
+--------------------------------------------- */
+.sota-slider .slider-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.35);
+}
+/* ---------------------------------------------
+   Labels
+--------------------------------------------- */
+.slider-label {
+  position: absolute;
+  top: 7px;
+  z-index: 20;
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  pointer-events: none;
+}
+.slider-label-left {
+  left: 7px;
+}
+.slider-label-right {
+  right: 7px;
+}
+/* ---------------------------------------------
+   Mobile
+--------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .sota-comparison-table {
+    min-width: 1300px;
+  }
+  .sota-comparison-table th:first-child,
+  .sota-comparison-table td:first-child {
+    width: 190px;
+  }
+  .sota-comparison-table th:not(:first-child),
+  .sota-comparison-table td:not(:first-child) {
+    width: 220px;
+  }
+  .intrinsic-anything-table {
+    min-width: 980px;
+  }
+  .intrinsic-anything-table th:first-child,
+  .intrinsic-anything-table td:first-child {
+    width: 150px;
+  }
+  .intrinsic-anything-table th:not(:first-child),
+  .intrinsic-anything-table td:not(:first-child) {
+    width: 205px;
+  }
+}
+</style>
+<!-- =========================================================
+     JavaScript
+     ========================================================= -->
+<script>
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    const sliders =
+      document.querySelectorAll(".sota-slider");
+    sliders.forEach(function (slider) {
+      const overlay =
+        slider.querySelector(".slider-overlay");
+      const line =
+        slider.querySelector(".slider-line");
+      function refreshSliderWidth() {
+        slider.style.setProperty(
+          "--slider-width",
+          slider.getBoundingClientRect().width + "px"
+        );
+      }
+      refreshSliderWidth();
+      if ("ResizeObserver" in window) {
+        const resizeObserver =
+          new ResizeObserver(refreshSliderWidth);
+        resizeObserver.observe(slider);
+      }
+      window.addEventListener(
+        "load",
+        refreshSliderWidth
+      );
+      window.addEventListener(
+        "resize",
+        refreshSliderWidth
+      );
+      let dragging = false;
+      /* ---------------------------------------------
+         Update slider
+      --------------------------------------------- */
+      function updateSlider(clientX) {
+        const rect =
+          slider.getBoundingClientRect();
+        refreshSliderWidth();
+        let x =
+          clientX - rect.left;
+        /* Clamp */
+        x =
+          Math.max(
+            0,
+            Math.min(
+              x,
+              rect.width
+            )
+          );
+        /* Percentage */
+        const percentage =
+          (x / rect.width) * 100;
+        /* Move overlay */
+        overlay.style.width =
+          percentage + "%";
+        /* Move line */
+        line.style.left =
+          percentage + "%";
+      }
+      /* ---------------------------------------------
+         Mouse down
+      --------------------------------------------- */
+      slider.addEventListener(
+        "mousedown",
+        function (event) {
+          dragging = true;
+          updateSlider(
+            event.clientX
+          );
+        }
+      );
+      /* ---------------------------------------------
+         Mouse move
+      --------------------------------------------- */
+      document.addEventListener(
+        "mousemove",
+        function (event) {
+          if (!dragging)
+            return;
+          updateSlider(
+            event.clientX
+          );
+        }
+      );
+      /* ---------------------------------------------
+         Mouse up
+      --------------------------------------------- */
+      document.addEventListener(
+        "mouseup",
+        function () {
+          dragging = false;
+        }
+      );
+      /* ---------------------------------------------
+         Touch start
+      --------------------------------------------- */
+      slider.addEventListener(
+        "touchstart",
+        function (event) {
+          dragging = true;
+          updateSlider(
+            event.touches[0].clientX
+          );
+        },
+        { passive: true }
+      );
+      /* ---------------------------------------------
+         Touch move
+      --------------------------------------------- */
+      slider.addEventListener(
+        "touchmove",
+        function (event) {
+          if (!dragging)
+            return;
+          updateSlider(
+            event.touches[0].clientX
+          );
+        },
+        { passive: true }
+      );
+      /* ---------------------------------------------
+         Touch end
+      --------------------------------------------- */
+      slider.addEventListener(
+        "touchend",
+        function () {
+          dragging = false;
+        }
+      );
+    });
+  }
+);
+</script>
 
 
 <!-- Youtube video -->
@@ -399,13 +1290,19 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Material Artist Workflow and Challenges</h2>
+      <p class="has-text-centered sota-description">
+        This video introduces how material artists currently capture, clean,
+        de-light, and refine PBR materials, highlighting the practical
+        challenges caused by shadows, highlights, spatially varying
+        illumination, and repeated manual correction.
+      </p>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-three-fifths">
           
           <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/c7tI6ICo23I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -416,32 +1313,51 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small compact-video-section">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Additional Detail and Motivation Videos</h2>
+      <p class="has-text-centered sota-description">
+        These videos provide more context on the design choices, failure cases,
+        comparison details, and motivation behind our illumination-invariant
+        material decomposition pipeline.
+      </p>
+
       <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- Video 1 -->
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/DfCH1cjzvmI"
+            title="Project Video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
+
+        <!-- Video 2 -->
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/Y9SvKHtu5Jg"
+            title="Project Video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
+
+        <!-- Video 3 -->
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+          <iframe
+            src="https://www.youtube.com/embed/6pyK57fbF8c"
+            title="Project Video 3"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
+
       </div>
     </div>
   </div>
@@ -454,41 +1370,41 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+<!-- <section class="hero is-small is-light"> -->
+  <!-- <div class="hero-body"> -->
+    <!-- <div class="container"> -->
+      <!-- <h2 class="title">Poster</h2> -->
 
       <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550"> -->
+          <!-- </iframe> -->
         
-      </div>
-    </div>
-  </section>
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
 <!--End paper poster -->
 
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
+  <!-- <section class="section" id="BibTeX"> -->
+    <!-- <div class="container is-max-desktop content"> -->
+      <!-- <div class="bibtex-header"> -->
+        <!-- <h2 class="title">BibTeX</h2> -->
+        <!-- <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard"> -->
+          <!-- <i class="fas fa-copy"></i> -->
+          <!-- <span class="copy-text">Copy</span> -->
+        <!-- </button> -->
+      <!-- </div> -->
+      <!-- <pre id="bibtex-code"><code>@article{YourPaperKey2024, -->
+  <!-- title={Your Paper Title Here}, -->
+  <!-- author={First Author and Second Author and Third Author}, -->
+  <!-- journal={Conference/Journal Name}, -->
+  <!-- year={2024}, -->
+  <!-- url={https://your-domain.com/your-project-page} -->
+<!-- }</code></pre> -->
+    <!-- </div> -->
+<!-- </section> -->
 <!--End BibTex citation -->
 
 
